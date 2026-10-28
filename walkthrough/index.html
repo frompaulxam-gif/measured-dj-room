@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#161818"><title>Your room · walkthrough</title><link rel="stylesheet" href="style.css"><link rel="icon" href="data:,"></head>
 <body>
 <main id="room" aria-label="Interactive room walkthrough">
-  <canvas id="view" tabindex="0" aria-label="3D room. Drag to look. W A S D to move; Q and E to turn."></canvas>
+  <canvas id="view" tabindex="0" aria-label="3D room. Drag to look. W A S D to move; Q and E to turn; Shift to move faster."></canvas>
   <header class="toolbar">
     <div class="title">your room <span>walkthrough</span></div>
     <div class="segmented" role="group" aria-label="Room version"><button data-scene="current" aria-pressed="false">current</button><button data-scene="proposed" aria-pressed="true">new look</button></div>
@@ -25,14 +25,14 @@
     <p class="model-note"><strong>1:1 model scale.</strong> The supplied plan does not quite close: 119 + 15 = 134 in, while 127 + 6 = 133 in. This model uses a <strong>118 in right wall</strong> to close at 133 in.</p>
     <h2 class="panel-subhead">new look layout</h2><dl><div><dt>room width</dt><dd>100 in · supplied</dd></div><div><dt>booth centre</dt><dd>50 in from each side</dd></div><div><dt>worktop</dt><dd>50 × 26 in · chosen</dd></div><div><dt>worktop height</dt><dd>38.8 in / 98.6 cm</dd></div><div><dt>behind the booth</dt><dd>28 in; 23 at sill</dd></div><div><dt>nominal side gaps</dt><dd>25 in before fittings</dd></div></dl>
     <p class="small">At 72 in height, the curved side has about <strong>17.6 in</strong> beside the booth after plaster thickness. Use the straight side to reach the decks.</p>
-    <details><summary>measurements still to confirm</summary><p>The 115 in ceiling and 35 in curve start come from the provisional profile. The curve's 40 in reach, 44 × 64 in window, 36 in sill and 32 × 80 in entrance are chosen assumptions. Door and window positions need checking on site.</p><p>The model fits two 22 × 16 in standing guides behind the booth. Movement uses a 17 in body width. It is a spatial preview, not an accessibility or building compliance assessment.</p></details>
+    <details><summary>measurements still to confirm</summary><p>The 115 in ceiling and 35 in curve start come from the provisional profile. The curve's 40 in reach, 44 × 64 in window, 36 in sill and 32 × 80 in entrance are chosen assumptions. Door and window positions need checking on site.</p><p>The model fits two 22 × 16 in standing guides behind the booth. Movement uses a 17 in body width. Plants and their pots can be passed through for easier exploration; walls and the booth stay solid. It is a spatial preview, not an accessibility or building compliance assessment.</p></details>
     <p class="small">Real-time lighting approximates the rendered concept. The exterior is illustrative. A screen's field of view also affects how spacious a room appears.</p>
     <a href="../room-before-and-after.pdf" target="_blank">open the measured before and after PDF</a>
   </aside>
   <div id="crosshair" aria-hidden="true" hidden>+</div>
   <div id="toast" role="status" aria-live="polite"></div>
   <footer class="controls">
-    <div class="move-help"><strong>W A S D</strong> move <span>· drag to look · Q / E turn</span><button id="walk">mouse look</button></div>
+    <div class="move-help"><strong>W A S D</strong> move <span>· drag to look · Q / E turn · Shift faster</span><button id="walk">mouse look</button></div>
     <div class="settings">
       <label>view<select id="preset"><option value="entrance">entrance</option><option value="floor">middle of room</option><option value="behind">behind the decks</option><option value="custom" disabled>your position</option></select></label>
       <label class="range-label">eye height <output id="height-value">165 cm</output><input id="height" type="range" min="140" max="185" value="165" step="1" aria-label="Eye height in centimetres"></label>
@@ -41,4 +41,4 @@
   </footer>
   <div id="touch-move" aria-label="Touch movement"><button data-move="forward" aria-label="Move forward">↑</button><button data-move="left" aria-label="Move left">←</button><button data-move="back" aria-label="Move backward">↓</button><button data-move="right" aria-label="Move right">→</button></div>
   <noscript>This walkthrough needs JavaScript. The measured PDF is available in the outputs folder.</noscript>
-</main><script type="module" src="app.js"></script></body></html>
+</main><script type="module" src="app.js?v=a7d2e1dda26c"></script></body></html>
