@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#161818"><title>Your room · walkthrough</title><link rel="stylesheet" href="style.css"><link rel="icon" href="data:,"></head>
+<body>
+<main id="room" aria-label="Interactive room walkthrough">
+  <canvas id="view" tabindex="0" aria-label="3D room. Drag to look. W A S D to move; Q and E to turn."></canvas>
+  <header class="toolbar">
+    <div class="title">your room <span>walkthrough</span></div>
+    <div class="segmented" role="group" aria-label="Room version"><button data-scene="current" aria-pressed="false">current</button><button data-scene="proposed" aria-pressed="true">new look</button></div>
+    <div class="tools"><button id="measure" aria-expanded="false" aria-controls="details">dimensions</button><button id="full" aria-label="Enter full screen">full screen</button></div>
+  </header>
+  <section id="loading" aria-live="polite"><div><p id="loading-title">opening your room</p><p id="loading-detail">loading the measured Blender model…</p><progress id="progress" max="100"></progress><button id="retry" hidden>try again</button></div></section>
+  <aside id="details" hidden aria-label="Room dimensions">
+    <div class="panel-head"><h1>the space, to scale</h1><button id="close-details" aria-label="Close dimensions">×</button></div>
+    <svg id="plan" viewBox="-17 -15 140 164" role="img" aria-label="Room plan with your live position">
+      <path d="M0 133 L75 133 L75 118 L100 118 L100 0 L2 0 L2 6 L0 6 Z" class="plan-floor"/>
+      <path id="plan-booth" d="M25 79 H75 V105 H25Z" class="plan-booth"/>
+      <path id="plan-kitchen" d="M75 14 H99 V118 H75Z" class="plan-kitchen" hidden/>
+      <path d="M50 0 V133" class="centreline"/>
+      <path d="M0 -7 H100 M0 -10 V-4 M100 -10 V-4" class="dimension-line"/><text x="50" y="-10" text-anchor="middle">100 in / 254 cm</text>
+      <text x="108" y="66" transform="rotate(90 108 66)" text-anchor="middle">133 in / 337.8 cm</text>
+      <text x="50" y="94" class="booth-label" text-anchor="middle">50 × 26 in</text>
+      <text x="38" y="147" text-anchor="middle">window</text><text x="39" y="8" text-anchor="middle">entrance</text>
+      <g id="plan-person"><circle r="8.5"/><path d="M0 -4 L-3 3 L3 3Z"/></g>
+    </svg>
+    <p class="model-note"><strong>1:1 model scale.</strong> The supplied plan does not quite close: 119 + 15 = 134 in, while 127 + 6 = 133 in. This model uses a <strong>118 in right wall</strong> to close at 133 in.</p>
+    <h2 class="panel-subhead">new look layout</h2><dl><div><dt>room width</dt><dd>100 in · supplied</dd></div><div><dt>booth centre</dt><dd>50 in from each side</dd></div><div><dt>worktop</dt><dd>50 × 26 in · chosen</dd></div><div><dt>worktop height</dt><dd>38.8 in / 98.6 cm</dd></div><div><dt>behind the booth</dt><dd>28 in; 23 at sill</dd></div><div><dt>nominal side gaps</dt><dd>25 in before fittings</dd></div></dl>
+    <p class="small">At 72 in height, the curved side has about <strong>17.6 in</strong> beside the booth after plaster thickness. Use the straight side to reach the decks.</p>
+    <details><summary>measurements still to confirm</summary><p>The 115 in ceiling and 35 in curve start come from the provisional profile. The curve's 40 in reach, 44 × 64 in window, 36 in sill and 32 × 80 in entrance are chosen assumptions. Door and window positions need checking on site.</p><p>The model fits two 22 × 16 in standing guides behind the booth. Movement uses a 17 in body width. It is a spatial preview, not an accessibility or building compliance assessment.</p></details>
+    <p class="small">Real-time lighting approximates the rendered concept. The exterior is illustrative. A screen's field of view also affects how spacious a room appears.</p>
+    <a href="../room-before-and-after.pdf" target="_blank">open the measured before and after PDF</a>
+  </aside>
+  <div id="crosshair" aria-hidden="true" hidden>+</div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <footer class="controls">
+    <div class="move-help"><strong>W A S D</strong> move <span>· drag to look · Q / E turn</span><button id="walk">mouse look</button></div>
+    <div class="settings">
+      <label>view<select id="preset"><option value="entrance">entrance</option><option value="floor">middle of room</option><option value="behind">behind the decks</option><option value="custom" disabled>your position</option></select></label>
+      <label class="range-label">eye height <output id="height-value">165 cm</output><input id="height" type="range" min="140" max="185" value="165" step="1" aria-label="Eye height in centimetres"></label>
+      <label class="range-label fov-label"><span id="fov-axis">horiz. FOV</span> <output id="fov-value">80°</output><input id="fov" type="range" min="45" max="110" value="80" step="1" aria-label="Horizontal field of view in degrees"></label>
+    </div>
+  </footer>
+  <div id="touch-move" aria-label="Touch movement"><button data-move="forward" aria-label="Move forward">↑</button><button data-move="left" aria-label="Move left">←</button><button data-move="back" aria-label="Move backward">↓</button><button data-move="right" aria-label="Move right">→</button></div>
+  <noscript>This walkthrough needs JavaScript. The measured PDF is available in the outputs folder.</noscript>
+</main><script type="module" src="app.js"></script></body></html>

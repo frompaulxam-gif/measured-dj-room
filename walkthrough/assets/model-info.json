@@ -1,0 +1,1445 @@
+{
+  "compression": {
+    "format": "KHR_draco_mesh_compression",
+    "position_quantization_bits": 16,
+    "note": "Per-mesh position quantisation; room-scale error below0.1mm for interior meshes; exact canonical dimensions retained in Blender."
+  },
+  "bounds_coordinate_space": "Blender XYZ metres",
+  "source": "Measured Blender room model",
+  "units": "metres",
+  "coordinate_conversion": "Blender (x,y,z) -> glTF (x,z,-y)",
+  "lighting": "PBR materials converted; no lighting baked; browser recreates lighting.",
+  "scenes": {
+    "current": {
+      "lights": [
+        {
+          "name": "Daylight through window",
+          "type": "AREA",
+          "position": [
+            0.9398000240325928,
+            1.9049999713897705,
+            0.38100001215934753
+          ],
+          "direction": [
+            0.06052273511886597,
+            -0.24209100008010864,
+            -0.9683641195297241
+          ],
+          "color": [
+            0.7599999904632568,
+            0.8500000238418579,
+            1.0
+          ],
+          "watts": 175.0,
+          "size": 1.2192000150680542,
+          "size_y": 0.25,
+          "shape": "DISK"
+        },
+        {
+          "name": "Camera side soft fill",
+          "type": "AREA",
+          "position": [
+            0.9652000069618225,
+            2.4892001152038574,
+            -3.225800037384033
+          ],
+          "direction": [
+            0.020124129951000214,
+            -0.48297974467277527,
+            0.8754002451896667
+          ],
+          "color": [
+            1.0,
+            0.8999999761581421,
+            0.7599999904632568
+          ],
+          "watts": 60.0,
+          "size": 1.5240000486373901,
+          "size_y": 0.25,
+          "shape": "DISK"
+        },
+        {
+          "name": "Existing pendant warm pool",
+          "type": "AREA",
+          "position": [
+            1.0667999982833862,
+            2.0065999031066895,
+            -1.4478000402450562
+          ],
+          "direction": [
+            0.0,
+            -1.0,
+            -0.0
+          ],
+          "color": [
+            1.0,
+            0.7599999904632568,
+            0.5099999904632568
+          ],
+          "watts": 100.0,
+          "size": 0.2540000081062317,
+          "size_y": 0.25,
+          "shape": "DISK"
+        }
+      ],
+      "source_objects": 158,
+      "source_faces": 2471,
+      "exported_objects": 151,
+      "skipped_objects": [
+        "Daylight through window",
+        "Camera side soft fill",
+        "Camera entrance",
+        "Camera reverse",
+        "Camera plan",
+        "Camera cutaway",
+        "Existing pendant warm pool"
+      ],
+      "triangles": 18084,
+      "bounds": {
+        "Floor slab 100 x 133 inches.002": [
+          [
+            0.0,
+            2.5399999618530273
+          ],
+          [
+            0.0,
+            3.378200054168701
+          ],
+          [
+            -0.07620000094175339,
+            0.0
+          ]
+        ]
+      },
+      "bytes": 3041560,
+      "gltf_validation": {
+        "mesh_count": 151,
+        "material_count": 15,
+        "image_count": 12,
+        "textured_materials": [
+          "Existing off-white plaster | Web PBR",
+          "Butcher block oak | Web PBR",
+          "Existing dark floor | Web PBR",
+          "Existing entrance door | Web PBR"
+        ],
+        "normal_mapped_materials": [
+          "Existing off-white plaster | Web PBR",
+          "Butcher block oak | Web PBR",
+          "Existing dark floor | Web PBR",
+          "Existing entrance door | Web PBR"
+        ],
+        "alpha_materials": []
+      },
+      "texture_optimization": {
+        "input_bytes": 7808380,
+        "output_bytes": 3041560,
+        "nonimage_buffer_views_byte_identical": 151,
+        "geometry_and_material_definitions_unchanged": true,
+        "alpha_PNG_preserved": true,
+        "textures": [
+          {
+            "name": "existing-plaster-normal",
+            "kind": "normal",
+            "before_bytes": 1428127,
+            "after_bytes": 518620,
+            "mime": "image/jpeg",
+            "jpeg_quality": 97,
+            "size": [
+              1024,
+              1024
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 43.859,
+            "mean_abs_8bit_error": 1.1531,
+            "mean_normal_error_degrees": 0.9969,
+            "p99_normal_error_degrees": 2.6078
+          },
+          {
+            "name": "existing-plaster-base",
+            "kind": "basecolour",
+            "before_bytes": 366706,
+            "after_bytes": 39479,
+            "mime": "image/jpeg",
+            "jpeg_quality": 93,
+            "size": [
+              1024,
+              1024
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 50.483,
+            "mean_abs_8bit_error": 0.5598
+          },
+          {
+            "name": "existing-plaster-rough",
+            "kind": "roughness",
+            "before_bytes": 15961,
+            "after_bytes": 12576,
+            "mime": "image/jpeg",
+            "jpeg_quality": 95,
+            "size": [
+              1024,
+              1024
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 148.131,
+            "mean_abs_8bit_error": 0.0
+          },
+          {
+            "name": "kitchen-oak-normal",
+            "kind": "normal",
+            "before_bytes": 1740099,
+            "after_bytes": 786834,
+            "mime": "image/jpeg",
+            "jpeg_quality": 97,
+            "size": [
+              1024,
+              1024
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 42.086,
+            "mean_abs_8bit_error": 1.4336,
+            "mean_normal_error_degrees": 1.1838,
+            "p99_normal_error_degrees": 3.0946
+          },
+          {
+            "name": "kitchen-oak-base",
+            "kind": "basecolour",
+            "before_bytes": 381642,
+            "after_bytes": 49140,
+            "mime": "image/jpeg",
+            "jpeg_quality": 93,
+            "size": [
+              1024,
+              1024
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 52.259,
+            "mean_abs_8bit_error": 0.3602
+          },
+          {
+            "name": "kitchen-oak-rough",
+            "kind": "roughness",
+            "before_bytes": 15961,
+            "after_bytes": 12575,
+            "mime": "image/jpeg",
+            "jpeg_quality": 95,
+            "size": [
+              1024,
+              1024
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 52.902,
+            "mean_abs_8bit_error": 0.3333
+          },
+          {
+            "name": "existing-floor-normal",
+            "kind": "normal",
+            "before_bytes": 1300729,
+            "after_bytes": 384758,
+            "mime": "image/jpeg",
+            "jpeg_quality": 97,
+            "size": [
+              1024,
+              1024
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 45.515,
+            "mean_abs_8bit_error": 0.9503,
+            "mean_normal_error_degrees": 0.8272,
+            "p99_normal_error_degrees": 2.0222
+          },
+          {
+            "name": "existing-floor-base",
+            "kind": "basecolour",
+            "before_bytes": 107992,
+            "after_bytes": 22957,
+            "mime": "image/jpeg",
+            "jpeg_quality": 93,
+            "size": [
+              1024,
+              1024
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 49.755,
+            "mean_abs_8bit_error": 0.6739
+          },
+          {
+            "name": "existing-floor-rough",
+            "kind": "roughness",
+            "before_bytes": 15961,
+            "after_bytes": 12576,
+            "mime": "image/jpeg",
+            "jpeg_quality": 95,
+            "size": [
+              1024,
+              1024
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 148.131,
+            "mean_abs_8bit_error": 0.0
+          },
+          {
+            "name": "entrance-timber-normal",
+            "kind": "normal",
+            "before_bytes": 1740102,
+            "after_bytes": 786858,
+            "mime": "image/jpeg",
+            "jpeg_quality": 97,
+            "size": [
+              1024,
+              1024
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 42.086,
+            "mean_abs_8bit_error": 1.4336,
+            "mean_normal_error_degrees": 1.1838,
+            "p99_normal_error_degrees": 3.0946
+          },
+          {
+            "name": "entrance-timber-base",
+            "kind": "basecolour",
+            "before_bytes": 320259,
+            "after_bytes": 43775,
+            "mime": "image/jpeg",
+            "jpeg_quality": 93,
+            "size": [
+              1024,
+              1024
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 52.288,
+            "mean_abs_8bit_error": 0.3584
+          },
+          {
+            "name": "entrance-timber-rough",
+            "kind": "roughness",
+            "before_bytes": 15960,
+            "after_bytes": 12575,
+            "mime": "image/jpeg",
+            "jpeg_quality": 95,
+            "size": [
+              1024,
+              1024
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 49.892,
+            "mean_abs_8bit_error": 0.6667
+          }
+        ]
+      }
+    },
+    "proposed": {
+      "lights": [
+        {
+          "name": "Daylight through window.001",
+          "type": "AREA",
+          "position": [
+            0.9398000240325928,
+            1.9049999713897705,
+            0.38100001215934753
+          ],
+          "direction": [
+            0.06052273511886597,
+            -0.24209100008010864,
+            -0.9683641195297241
+          ],
+          "color": [
+            0.8600000143051147,
+            0.9200000166893005,
+            1.0
+          ],
+          "watts": 450.0,
+          "size": 1.1430000066757202,
+          "size_y": 0.25,
+          "shape": "DISK"
+        },
+        {
+          "name": "Camera side soft fill.001",
+          "type": "AREA",
+          "position": [
+            0.9652000069618225,
+            2.4892001152038574,
+            -3.225800037384033
+          ],
+          "direction": [
+            0.020124129951000214,
+            -0.48297974467277527,
+            0.8754002451896667
+          ],
+          "color": [
+            0.9300000071525574,
+            0.9599999785423279,
+            1.0
+          ],
+          "watts": 44.0,
+          "size": 1.5240000486373901,
+          "size_y": 0.25,
+          "shape": "DISK"
+        },
+        {
+          "name": "REF narrow LED wash",
+          "type": "AREA",
+          "position": [
+            1.2699999809265137,
+            0.9372599720954895,
+            -1.3512799739837646
+          ],
+          "direction": [
+            0.0,
+            -0.9999377727508545,
+            -0.011150401085615158
+          ],
+          "color": [
+            1.0,
+            0.3700000047683716,
+            0.054999999701976776
+          ],
+          "watts": 7.5,
+          "size": 1.1175999641418457,
+          "size_y": 0.02920999936759472,
+          "shape": "RECTANGLE"
+        },
+        {
+          "name": "REF neon pink wall cast",
+          "type": "AREA",
+          "position": [
+            2.2098000049591064,
+            1.625599980354309,
+            -1.8287999629974365
+          ],
+          "direction": [
+            1.0,
+            0.0,
+            -0.0
+          ],
+          "color": [
+            1.0,
+            0.05999999865889549,
+            0.15000000596046448
+          ],
+          "watts": 0.3499999940395355,
+          "size": 0.5080000162124634,
+          "size_y": 0.25,
+          "shape": "DISK"
+        },
+        {
+          "name": "REF plant pool left",
+          "type": "AREA",
+          "position": [
+            2.3875999450683594,
+            0.07620000094175339,
+            -2.0827999114990234
+          ],
+          "direction": [
+            -0.1385391503572464,
+            0.9895656108856201,
+            0.03958233818411827
+          ],
+          "color": [
+            1.0,
+            0.47999998927116394,
+            0.10999999940395355
+          ],
+          "watts": 25.0,
+          "size": 0.1777999997138977,
+          "size_y": 0.25,
+          "shape": "DISK"
+        },
+        {
+          "name": "REF rear plant pool left",
+          "type": "AREA",
+          "position": [
+            1.854200005531311,
+            0.06350000202655792,
+            -0.3301999866962433
+          ],
+          "direction": [
+            -0.07829225063323975,
+            0.9688668847084045,
+            0.2348771095275879
+          ],
+          "color": [
+            1.0,
+            0.46000000834465027,
+            0.10000000149011612
+          ],
+          "watts": 18.0,
+          "size": 0.20319999754428864,
+          "size_y": 0.25,
+          "shape": "DISK"
+        },
+        {
+          "name": "REF rear plant pool right",
+          "type": "AREA",
+          "position": [
+            0.05079999938607216,
+            0.06350000202655792,
+            -0.3301999866962433
+          ],
+          "direction": [
+            0.11699099838733673,
+            0.9651764035224915,
+            0.2339823991060257
+          ],
+          "color": [
+            1.0,
+            0.46000000834465027,
+            0.10000000149011612
+          ],
+          "watts": 16.0,
+          "size": 0.20319999754428864,
+          "size_y": 0.25,
+          "shape": "DISK"
+        },
+        {
+          "name": "REF front plant warm pool",
+          "type": "AREA",
+          "position": [
+            2.3875999450683594,
+            0.07620000094175339,
+            -1.6510000228881836
+          ],
+          "direction": [
+            -0.16113173961639404,
+            0.9869329929351807,
+            -1.4156103134155273e-07
+          ],
+          "color": [
+            1.0,
+            0.5099999904632568,
+            0.14000000059604645
+          ],
+          "watts": 17.0,
+          "size": 0.1777999997138977,
+          "size_y": 0.25,
+          "shape": "DISK"
+        },
+        {
+          "name": "REF straight side warm pool",
+          "type": "AREA",
+          "position": [
+            0.06350000202655792,
+            0.10159999877214432,
+            -1.8287999629974365
+          ],
+          "direction": [
+            -0.03399226441979408,
+            0.9971070885658264,
+            0.06798417866230011
+          ],
+          "color": [
+            1.0,
+            0.5299999713897705,
+            0.1599999964237213
+          ],
+          "watts": 6.0,
+          "size": 0.1777999997138977,
+          "size_y": 0.25,
+          "shape": "DISK"
+        },
+        {
+          "name": "REF soft control surface bounce",
+          "type": "AREA",
+          "position": [
+            1.0667999982833862,
+            2.4892001152038574,
+            -0.30480000376701355
+          ],
+          "direction": [
+            0.12158948928117752,
+            -0.8967227935791016,
+            -0.4255633056163788
+          ],
+          "color": [
+            1.0,
+            0.8399999737739563,
+            0.6200000047683716
+          ],
+          "watts": 22.0,
+          "size": 0.6096000075340271,
+          "size_y": 0.25,
+          "shape": "DISK"
+        },
+        {
+          "name": "REF exterior daylight",
+          "type": "AREA",
+          "position": [
+            2.5399999618530273,
+            5.5879998207092285,
+            4.572000026702881
+          ],
+          "direction": [
+            -0.31797152757644653,
+            -0.7949285507202148,
+            0.5167037844657898
+          ],
+          "color": [
+            0.949999988079071,
+            0.9700000286102295,
+            1.0
+          ],
+          "watts": 2800.0,
+          "size": 4.572000026702881,
+          "size_y": 0.25,
+          "shape": "DISK"
+        },
+        {
+          "name": "REAL task lamp pool",
+          "type": "AREA",
+          "position": [
+            0.7742965221405029,
+            1.2794218063354492,
+            -1.247221827507019
+          ],
+          "direction": [
+            0.38151007890701294,
+            -0.913615882396698,
+            0.14055632054805756
+          ],
+          "color": [
+            1.0,
+            0.6800000071525574,
+            0.3799999952316284
+          ],
+          "watts": 5.0,
+          "size": 0.03175000101327896,
+          "size_y": 0.25,
+          "shape": "DISK"
+        }
+      ],
+      "source_objects": 468,
+      "source_faces": 568877,
+      "exported_objects": 448,
+      "skipped_objects": [
+        "Daylight through window.001",
+        "Camera side soft fill.001",
+        "Camera entrance.001",
+        "Camera reverse.001",
+        "Camera plan.001",
+        "Camera cutaway.001",
+        "Camera equipment",
+        "REF underlip LED",
+        "REF narrow LED wash",
+        "REF neon pink wall cast",
+        "REF plant pool left",
+        "REF rear plant pool left",
+        "REF rear plant pool right",
+        "REF front plant warm pool",
+        "REF straight side warm pool",
+        "REF soft control surface bounce",
+        "REF exterior daylight",
+        "REAL task lamp pool",
+        "Standing envelope 22 x 16 x 72 inches",
+        "Standing envelope 22 x 16 x 72 inches.001"
+      ],
+      "triangles": 1809069,
+      "bounds": {
+        "Floor slab 100 x 133 inches.003": [
+          [
+            0.0,
+            2.5399999618530273
+          ],
+          [
+            0.0,
+            3.378200054168701
+          ],
+          [
+            -0.07620000094175339,
+            0.0
+          ]
+        ],
+        "DJ booth walnut countertop.001": [
+          [
+            0.6349999904632568,
+            1.9049999713897705
+          ],
+          [
+            0.7111999988555908,
+            1.3715999126434326
+          ],
+          [
+            0.9448800086975098,
+            0.9855200052261353
+          ]
+        ]
+      },
+      "bytes": 33250496,
+      "gltf_validation": {
+        "mesh_count": 448,
+        "material_count": 57,
+        "image_count": 31,
+        "textured_materials": [
+          "REF warm grey lime plaster | Web PBR",
+          "Botanical | mature forest green | Web PBR",
+          "Botanical | deep jade upper leaf | Web PBR",
+          "Botanical | satin green | Web PBR",
+          "anthurium_botany_01 | Web PBR",
+          "fern_02 | Web PBR",
+          "Botanical | fresh olive leaf | Web PBR",
+          "REF oiled walnut grain | Web PBR",
+          "REF charcoal woven acoustic fabric | Web PBR",
+          "REF worn grey concrete floor | Web PBR",
+          "REF recessed fine grey mortar | Web PBR",
+          "REF neutral grey aggregate blocks | Web PBR",
+          "Existing entrance door | Web PBR"
+        ],
+        "normal_mapped_materials": [
+          "REF warm grey lime plaster | Web PBR",
+          "anthurium_botany_01 | Web PBR",
+          "fern_02 | Web PBR",
+          "REF oiled walnut grain | Web PBR",
+          "REF charcoal woven acoustic fabric | Web PBR",
+          "REF worn grey concrete floor | Web PBR",
+          "REF recessed fine grey mortar | Web PBR",
+          "REF neutral grey aggregate blocks | Web PBR",
+          "Existing entrance door | Web PBR"
+        ],
+        "alpha_materials": [
+          "anthurium_botany_01 | Web PBR",
+          "fern_02 | Web PBR"
+        ]
+      },
+      "texture_optimization": {
+        "input_bytes": 91486824,
+        "output_bytes": 33250496,
+        "nonimage_buffer_views_byte_identical": 568,
+        "geometry_and_material_definitions_unchanged": true,
+        "alpha_PNG_preserved": true,
+        "textures": [
+          {
+            "name": "plaster-normal",
+            "kind": "normal",
+            "before_bytes": 5395131,
+            "after_bytes": 1843880,
+            "mime": "image/jpeg",
+            "jpeg_quality": 97,
+            "size": [
+              2048,
+              2048
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 46.159,
+            "mean_abs_8bit_error": 0.8539,
+            "mean_normal_error_degrees": 0.721,
+            "p99_normal_error_degrees": 2.0138
+          },
+          {
+            "name": "plaster-base",
+            "kind": "basecolour",
+            "before_bytes": 5947727,
+            "after_bytes": 1366084,
+            "mime": "image/jpeg",
+            "jpeg_quality": 93,
+            "size": [
+              2048,
+              2048
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 41.178,
+            "mean_abs_8bit_error": 1.7224
+          },
+          {
+            "name": "plaster-rough",
+            "kind": "roughness",
+            "before_bytes": 1423765,
+            "after_bytes": 113749,
+            "mime": "image/jpeg",
+            "jpeg_quality": 95,
+            "size": [
+              2048,
+              2048
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 53.05,
+            "mean_abs_8bit_error": 0.3198
+          },
+          {
+            "name": "leaf-mature-forest-green-base",
+            "kind": "basecolour",
+            "before_bytes": 345504,
+            "after_bytes": 60631,
+            "mime": "image/jpeg",
+            "jpeg_quality": 93,
+            "size": [
+              512,
+              512
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 43.116,
+            "mean_abs_8bit_error": 1.302
+          },
+          {
+            "name": "leaf-deep-jade-upper-leaf-base",
+            "kind": "basecolour",
+            "before_bytes": 341244,
+            "after_bytes": 59692,
+            "mime": "image/jpeg",
+            "jpeg_quality": 93,
+            "size": [
+              512,
+              512
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 43.234,
+            "mean_abs_8bit_error": 1.2854
+          },
+          {
+            "name": "leaf-satin-green-base",
+            "kind": "basecolour",
+            "before_bytes": 331649,
+            "after_bytes": 56612,
+            "mime": "image/jpeg",
+            "jpeg_quality": 93,
+            "size": [
+              512,
+              512
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 43.539,
+            "mean_abs_8bit_error": 1.2366
+          },
+          {
+            "name": "anthurium_botany_01_nor_gl",
+            "kind": "normal",
+            "before_bytes": 12773999,
+            "after_bytes": 2229732,
+            "mime": "image/jpeg",
+            "jpeg_quality": 97,
+            "size": [
+              2048,
+              2048
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 44.182,
+            "mean_abs_8bit_error": 0.9658,
+            "mean_normal_error_degrees": 0.7269,
+            "p99_normal_error_degrees": 2.8743
+          },
+          {
+            "name": "anthurium_botany_01_diff-anthurium_botany_01_alpha",
+            "kind": "basecolour",
+            "before_bytes": 5176311,
+            "after_bytes": 4151653,
+            "mime": "image/png",
+            "jpeg_quality": null,
+            "size": [
+              2048,
+              2048
+            ],
+            "alpha_preserved": true,
+            "resized": false
+          },
+          {
+            "name": "anthurium_botany_01_rough",
+            "kind": "roughness",
+            "before_bytes": 2755016,
+            "after_bytes": 1203221,
+            "mime": "image/jpeg",
+            "jpeg_quality": 95,
+            "size": [
+              2048,
+              2048
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 45.999,
+            "mean_abs_8bit_error": 0.6658
+          },
+          {
+            "name": "fern_02_nor_gl",
+            "kind": "normal",
+            "before_bytes": 8922372,
+            "after_bytes": 1635852,
+            "mime": "image/jpeg",
+            "jpeg_quality": 97,
+            "size": [
+              2048,
+              2048
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 46.3,
+            "mean_abs_8bit_error": 0.6529,
+            "mean_normal_error_degrees": 0.4953,
+            "p99_normal_error_degrees": 2.7546
+          },
+          {
+            "name": "fern_02_diff-fern_02_alpha",
+            "kind": "basecolour",
+            "before_bytes": 3558365,
+            "after_bytes": 2722722,
+            "mime": "image/png",
+            "jpeg_quality": null,
+            "size": [
+              2048,
+              2048
+            ],
+            "alpha_preserved": true,
+            "resized": false
+          },
+          {
+            "name": "fern_02_rough",
+            "kind": "roughness",
+            "before_bytes": 936181,
+            "after_bytes": 638842,
+            "mime": "image/jpeg",
+            "jpeg_quality": 95,
+            "size": [
+              2048,
+              2048
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 48.659,
+            "mean_abs_8bit_error": 0.2587
+          },
+          {
+            "name": "leaf-fresh-olive-leaf-base",
+            "kind": "basecolour",
+            "before_bytes": 331701,
+            "after_bytes": 54683,
+            "mime": "image/jpeg",
+            "jpeg_quality": 93,
+            "size": [
+              512,
+              512
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 43.946,
+            "mean_abs_8bit_error": 1.1735
+          },
+          {
+            "name": "walnut-normal",
+            "kind": "normal",
+            "before_bytes": 1400710,
+            "after_bytes": 365693,
+            "mime": "image/jpeg",
+            "jpeg_quality": 97,
+            "size": [
+              1024,
+              1024
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 43.837,
+            "mean_abs_8bit_error": 1.1592,
+            "mean_normal_error_degrees": 1.0188,
+            "p99_normal_error_degrees": 2.6936
+          },
+          {
+            "name": "walnut-base",
+            "kind": "basecolour",
+            "before_bytes": 483470,
+            "after_bytes": 70124,
+            "mime": "image/jpeg",
+            "jpeg_quality": 93,
+            "size": [
+              1024,
+              1024
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 50.652,
+            "mean_abs_8bit_error": 0.4989
+          },
+          {
+            "name": "walnut-rough",
+            "kind": "roughness",
+            "before_bytes": 15961,
+            "after_bytes": 12576,
+            "mime": "image/jpeg",
+            "jpeg_quality": 95,
+            "size": [
+              1024,
+              1024
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 148.131,
+            "mean_abs_8bit_error": 0.0
+          },
+          {
+            "name": "felt-normal",
+            "kind": "normal",
+            "before_bytes": 1625583,
+            "after_bytes": 584675,
+            "mime": "image/jpeg",
+            "jpeg_quality": 97,
+            "size": [
+              1024,
+              1024
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 41.886,
+            "mean_abs_8bit_error": 1.4526,
+            "mean_normal_error_degrees": 1.2189,
+            "p99_normal_error_degrees": 3.1763
+          },
+          {
+            "name": "felt-base",
+            "kind": "basecolour",
+            "before_bytes": 826553,
+            "after_bytes": 70185,
+            "mime": "image/jpeg",
+            "jpeg_quality": 93,
+            "size": [
+              1024,
+              1024
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 49.1,
+            "mean_abs_8bit_error": 0.6467
+          },
+          {
+            "name": "felt-rough",
+            "kind": "roughness",
+            "before_bytes": 15961,
+            "after_bytes": 12574,
+            "mime": "image/jpeg",
+            "jpeg_quality": 95,
+            "size": [
+              1024,
+              1024
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 52.902,
+            "mean_abs_8bit_error": 0.3333
+          },
+          {
+            "name": "floor-normal",
+            "kind": "normal",
+            "before_bytes": 5446718,
+            "after_bytes": 1561597,
+            "mime": "image/jpeg",
+            "jpeg_quality": 97,
+            "size": [
+              2048,
+              2048
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 44.374,
+            "mean_abs_8bit_error": 1.0799,
+            "mean_normal_error_degrees": 0.9245,
+            "p99_normal_error_degrees": 2.5369
+          },
+          {
+            "name": "floor-base",
+            "kind": "basecolour",
+            "before_bytes": 4450727,
+            "after_bytes": 596167,
+            "mime": "image/jpeg",
+            "jpeg_quality": 93,
+            "size": [
+              2048,
+              2048
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 51.469,
+            "mean_abs_8bit_error": 0.4148
+          },
+          {
+            "name": "floor-rough",
+            "kind": "roughness",
+            "before_bytes": 3017780,
+            "after_bytes": 1008910,
+            "mime": "image/jpeg",
+            "jpeg_quality": 95,
+            "size": [
+              2048,
+              2048
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 48.619,
+            "mean_abs_8bit_error": 0.5334
+          },
+          {
+            "name": "mortar-normal",
+            "kind": "normal",
+            "before_bytes": 1450918,
+            "after_bytes": 482477,
+            "mime": "image/jpeg",
+            "jpeg_quality": 97,
+            "size": [
+              1024,
+              1024
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 43.402,
+            "mean_abs_8bit_error": 1.2162,
+            "mean_normal_error_degrees": 1.0241,
+            "p99_normal_error_degrees": 2.7326
+          },
+          {
+            "name": "mortar-base",
+            "kind": "basecolour",
+            "before_bytes": 1397330,
+            "after_bytes": 369091,
+            "mime": "image/jpeg",
+            "jpeg_quality": 93,
+            "size": [
+              1024,
+              1024
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 40.667,
+            "mean_abs_8bit_error": 1.8437
+          },
+          {
+            "name": "mortar-rough",
+            "kind": "roughness",
+            "before_bytes": 362450,
+            "after_bytes": 26567,
+            "mime": "image/jpeg",
+            "jpeg_quality": 95,
+            "size": [
+              1024,
+              1024
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 57.117,
+            "mean_abs_8bit_error": 0.1245
+          },
+          {
+            "name": "block-normal",
+            "kind": "normal",
+            "before_bytes": 6763748,
+            "after_bytes": 2803125,
+            "mime": "image/jpeg",
+            "jpeg_quality": 97,
+            "size": [
+              2048,
+              2048
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 43.999,
+            "mean_abs_8bit_error": 1.1414,
+            "mean_normal_error_degrees": 0.9268,
+            "p99_normal_error_degrees": 2.581
+          },
+          {
+            "name": "block-base",
+            "kind": "basecolour",
+            "before_bytes": 5627682,
+            "after_bytes": 1122037,
+            "mime": "image/jpeg",
+            "jpeg_quality": 93,
+            "size": [
+              2048,
+              2048
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 43.64,
+            "mean_abs_8bit_error": 1.2896
+          },
+          {
+            "name": "block-rough",
+            "kind": "roughness",
+            "before_bytes": 1234721,
+            "after_bytes": 132923,
+            "mime": "image/jpeg",
+            "jpeg_quality": 95,
+            "size": [
+              2048,
+              2048
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 57.059,
+            "mean_abs_8bit_error": 0.1262
+          },
+          {
+            "name": "entrance-timber-normal",
+            "kind": "normal",
+            "before_bytes": 1740102,
+            "after_bytes": 786858,
+            "mime": "image/jpeg",
+            "jpeg_quality": 97,
+            "size": [
+              1024,
+              1024
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 42.086,
+            "mean_abs_8bit_error": 1.4336,
+            "mean_normal_error_degrees": 1.1838,
+            "p99_normal_error_degrees": 3.0946
+          },
+          {
+            "name": "entrance-timber-base",
+            "kind": "basecolour",
+            "before_bytes": 320259,
+            "after_bytes": 43775,
+            "mime": "image/jpeg",
+            "jpeg_quality": 93,
+            "size": [
+              1024,
+              1024
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 52.288,
+            "mean_abs_8bit_error": 0.3584
+          },
+          {
+            "name": "entrance-timber-rough",
+            "kind": "roughness",
+            "before_bytes": 15960,
+            "after_bytes": 12575,
+            "mime": "image/jpeg",
+            "jpeg_quality": 95,
+            "size": [
+              1024,
+              1024
+            ],
+            "alpha_preserved": false,
+            "resized": false,
+            "psnr_db": 49.892,
+            "mean_abs_8bit_error": 0.6667
+          }
+        ]
+      }
+    }
+  },
+  "materials": {
+    "Botanical | deep jade upper leaf | Web PBR": {
+      "method": "Cycles material-only texture conversion",
+      "source": "Botanical | deep jade upper leaf",
+      "tile_metres": 1,
+      "lighting_baked": false,
+      "uv": "original leaf UV",
+      "source_cache_maps": {
+        "base": "work/walkthrough/baked-textures/leaf-deep-jade-upper-leaf-base.png"
+      },
+      "delivery_maps": "Embedded in scene GLB; source cache not required by browser."
+    },
+    "Botanical | fresh olive leaf | Web PBR": {
+      "method": "Cycles material-only texture conversion",
+      "source": "Botanical | fresh olive leaf",
+      "tile_metres": 1,
+      "lighting_baked": false,
+      "uv": "original leaf UV",
+      "source_cache_maps": {
+        "base": "work/walkthrough/baked-textures/leaf-fresh-olive-leaf-base.png"
+      },
+      "delivery_maps": "Embedded in scene GLB; source cache not required by browser."
+    },
+    "Botanical | golden pothos mottling | Web PBR": {
+      "method": "Cycles material-only texture conversion",
+      "source": "Botanical | golden pothos mottling",
+      "tile_metres": 1,
+      "lighting_baked": false,
+      "uv": "original leaf UV",
+      "source_cache_maps": {
+        "base": "work/walkthrough/baked-textures/leaf-golden-pothos-mottling-base.png"
+      },
+      "delivery_maps": "Embedded in scene GLB; source cache not required by browser."
+    },
+    "Botanical | mature forest green | Web PBR": {
+      "method": "Cycles material-only texture conversion",
+      "source": "Botanical | mature forest green",
+      "tile_metres": 1,
+      "lighting_baked": false,
+      "uv": "original leaf UV",
+      "source_cache_maps": {
+        "base": "work/walkthrough/baked-textures/leaf-mature-forest-green-base.png"
+      },
+      "delivery_maps": "Embedded in scene GLB; source cache not required by browser."
+    },
+    "Botanical | pale leaf underside | Web PBR": {
+      "method": "Cycles material-only texture conversion",
+      "source": "Botanical | pale leaf underside",
+      "tile_metres": 1,
+      "lighting_baked": false,
+      "uv": "original leaf UV",
+      "source_cache_maps": {
+        "base": "work/walkthrough/baked-textures/leaf-pale-leaf-underside-base.png"
+      },
+      "delivery_maps": "Embedded in scene GLB; source cache not required by browser."
+    },
+    "Botanical | satin green | Web PBR": {
+      "method": "Cycles material-only texture conversion",
+      "source": "Botanical | satin green",
+      "tile_metres": 1,
+      "lighting_baked": false,
+      "uv": "original leaf UV",
+      "source_cache_maps": {
+        "base": "work/walkthrough/baked-textures/leaf-satin-green-base.png"
+      },
+      "delivery_maps": "Embedded in scene GLB; source cache not required by browser."
+    },
+    "Botanical | warm new growth | Web PBR": {
+      "method": "Cycles material-only texture conversion",
+      "source": "Botanical | warm new growth",
+      "tile_metres": 1,
+      "lighting_baked": false,
+      "uv": "original leaf UV",
+      "source_cache_maps": {
+        "base": "work/walkthrough/baked-textures/leaf-warm-new-growth-base.png"
+      },
+      "delivery_maps": "Embedded in scene GLB; source cache not required by browser."
+    },
+    "Butcher block oak | Web PBR": {
+      "method": "Cycles material-only texture conversion",
+      "source": "Butcher block oak",
+      "tile_metres": 1,
+      "lighting_baked": false,
+      "uv": "world-space planar projection with actual metre tile",
+      "source_cache_maps": {
+        "base": "work/walkthrough/baked-textures/kitchen-oak-base.png",
+        "rough": "work/walkthrough/baked-textures/kitchen-oak-rough.png",
+        "normal": "work/walkthrough/baked-textures/kitchen-oak-normal.png"
+      },
+      "delivery_maps": "Embedded in scene GLB; source cache not required by browser."
+    },
+    "Existing dark floor | Web PBR": {
+      "method": "Cycles material-only texture conversion",
+      "source": "Existing dark floor",
+      "tile_metres": 3,
+      "lighting_baked": false,
+      "uv": "world-space planar projection with actual metre tile",
+      "source_cache_maps": {
+        "base": "work/walkthrough/baked-textures/existing-floor-base.png",
+        "rough": "work/walkthrough/baked-textures/existing-floor-rough.png",
+        "normal": "work/walkthrough/baked-textures/existing-floor-normal.png"
+      },
+      "delivery_maps": "Embedded in scene GLB; source cache not required by browser."
+    },
+    "Existing entrance door | Web PBR": {
+      "method": "Cycles material-only texture conversion",
+      "source": "Existing entrance door",
+      "tile_metres": 1,
+      "lighting_baked": false,
+      "uv": "world-space planar projection with actual metre tile",
+      "source_cache_maps": {
+        "base": "work/walkthrough/baked-textures/entrance-timber-base.png",
+        "rough": "work/walkthrough/baked-textures/entrance-timber-rough.png",
+        "normal": "work/walkthrough/baked-textures/entrance-timber-normal.png"
+      },
+      "delivery_maps": "Embedded in scene GLB; source cache not required by browser."
+    },
+    "Existing off-white plaster | Web PBR": {
+      "method": "Cycles material-only texture conversion",
+      "source": "Existing off-white plaster",
+      "tile_metres": 2,
+      "lighting_baked": false,
+      "uv": "world-space planar projection with actual metre tile",
+      "source_cache_maps": {
+        "base": "work/walkthrough/baked-textures/existing-plaster-base.png",
+        "rough": "work/walkthrough/baked-textures/existing-plaster-rough.png",
+        "normal": "work/walkthrough/baked-textures/existing-plaster-normal.png"
+      },
+      "delivery_maps": "Embedded in scene GLB; source cache not required by browser."
+    },
+    "REF charcoal woven acoustic fabric | Web PBR": {
+      "method": "Cycles material-only texture conversion",
+      "source": "REF charcoal woven acoustic fabric",
+      "tile_metres": 0.5,
+      "lighting_baked": false,
+      "uv": "world-space planar projection with actual metre tile",
+      "source_cache_maps": {
+        "base": "work/walkthrough/baked-textures/felt-base.png",
+        "rough": "work/walkthrough/baked-textures/felt-rough.png",
+        "normal": "work/walkthrough/baked-textures/felt-normal.png"
+      },
+      "delivery_maps": "Embedded in scene GLB; source cache not required by browser."
+    },
+    "REF neutral grey aggregate blocks | Web PBR": {
+      "method": "Cycles material-only texture conversion",
+      "source": "REF neutral grey aggregate blocks",
+      "tile_metres": 1.2,
+      "lighting_baked": false,
+      "uv": "world-space planar projection with actual metre tile",
+      "source_cache_maps": {
+        "base": "work/walkthrough/baked-textures/block-base.png",
+        "rough": "work/walkthrough/baked-textures/block-rough.png",
+        "normal": "work/walkthrough/baked-textures/block-normal.png"
+      },
+      "delivery_maps": "Embedded in scene GLB; source cache not required by browser."
+    },
+    "REF oiled walnut grain | Web PBR": {
+      "method": "Cycles material-only texture conversion",
+      "source": "REF oiled walnut grain",
+      "tile_metres": 1,
+      "lighting_baked": false,
+      "uv": "world-space planar projection with actual metre tile",
+      "source_cache_maps": {
+        "base": "work/walkthrough/baked-textures/walnut-base.png",
+        "rough": "work/walkthrough/baked-textures/walnut-rough.png",
+        "normal": "work/walkthrough/baked-textures/walnut-normal.png"
+      },
+      "delivery_maps": "Embedded in scene GLB; source cache not required by browser."
+    },
+    "REF recessed fine grey mortar | Web PBR": {
+      "method": "Cycles material-only texture conversion",
+      "source": "REF recessed fine grey mortar",
+      "tile_metres": 0.6,
+      "lighting_baked": false,
+      "uv": "world-space planar projection with actual metre tile",
+      "source_cache_maps": {
+        "base": "work/walkthrough/baked-textures/mortar-base.png",
+        "rough": "work/walkthrough/baked-textures/mortar-rough.png",
+        "normal": "work/walkthrough/baked-textures/mortar-normal.png"
+      },
+      "delivery_maps": "Embedded in scene GLB; source cache not required by browser."
+    },
+    "REF warm grey lime plaster | Web PBR": {
+      "method": "Cycles material-only texture conversion",
+      "source": "REF warm grey lime plaster",
+      "tile_metres": 2,
+      "lighting_baked": false,
+      "uv": "world-space planar projection with actual metre tile",
+      "source_cache_maps": {
+        "base": "work/walkthrough/baked-textures/plaster-base.png",
+        "rough": "work/walkthrough/baked-textures/plaster-rough.png",
+        "normal": "work/walkthrough/baked-textures/plaster-normal.png"
+      },
+      "delivery_maps": "Embedded in scene GLB; source cache not required by browser."
+    },
+    "REF worn grey concrete floor | Web PBR": {
+      "method": "Cycles material-only texture conversion",
+      "source": "REF worn grey concrete floor",
+      "tile_metres": 3,
+      "lighting_baked": false,
+      "uv": "world-space planar projection with actual metre tile",
+      "source_cache_maps": {
+        "base": "work/walkthrough/baked-textures/floor-base.png",
+        "rough": "work/walkthrough/baked-textures/floor-rough.png",
+        "normal": "work/walkthrough/baked-textures/floor-normal.png"
+      },
+      "delivery_maps": "Embedded in scene GLB; source cache not required by browser."
+    }
+  },
+  "texture_optimization_recipe": "work/optimize_walkthrough_textures.py; opaque base RGB JPEG93, tangent normals JPEG97, roughness JPEG95, no chroma subsampling. Keep smaller original images and preserve alphaPNG. Every nonimage buffer view verified byte-identical."
+}
